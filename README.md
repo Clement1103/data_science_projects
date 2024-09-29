@@ -32,7 +32,7 @@ Ensuite, les notebooks peuvent être consultés à l'aide de :
 jupyter notebook
 ```
 
-** Néanmoins, pour éviter d'avoir à installer cela, j'ai téléchargé les notebooks en pdf, qui sont consultables sans environnement. ** 
+**Néanmoins, pour éviter d'avoir à installer cela, j'ai téléchargé les notebooks en pdf, qui sont consultables sans environnement.** 
 
 ## 💡 Mot de la fin
 
@@ -77,7 +77,7 @@ Notebooks can then be viewed using :
 jupyter notebook
 ```
 
-** However, to avoid having to install this, I've downloaded the notebooks as pdf files, which can be viewed without an environment. ** 
+**However, to avoid having to install this, I've downloaded the notebooks as pdf files, which can be viewed without an environment.** 
 
 ## 💡 Closing remarks
 
