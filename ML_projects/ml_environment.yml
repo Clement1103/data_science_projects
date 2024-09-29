@@ -1,0 +1,16 @@
+name: ml_projects_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pandas
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - seaborn
+  - opencv
+  - jupyter
+  - scikit-image
+  - joblib
+
