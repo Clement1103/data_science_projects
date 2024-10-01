@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Data:
+	GM Spinal Cord Segmentation Challenge Data Set
+
+Version: 1.0 (29/02/2016)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Usage: 
+
+This GM Spinal Cord Challenge Data Set (the Data) is intended for
+research and educational purposes only. You agree to use the Data
+according to the terms and conditions outlined in the Disclaimer and
+End User License Agreement (EULA). In brief, the Data has NOT been
+cleared by the Food and Drug Administration, and it may NOT be used
+for clinical or diagnostic purposes.
+
+The downloaded Data, including associated manual delineations, or any
+data derived from these data sets, may not be given or redistributed
+under any circumstances to persons not belonging to the registered
+team. 
+
+Downloaded Data may only be used for the purpose of preparing an entry
+to be submitted for the GM Spinal Cord Segmentation Challenge.
+
+If the results of algorithms in this challenge are to be used in
+scientific publications (journal publications, conference papers ,
+technical reports, presentations at conferences and meetings) you must
+make an appropriate citation (see below).
+
+Evaluation of the segmentation results will be made publicly available
+in subsequent publications. By submitting your results, you grant 
+permission to publish our evaluation. Participating teams maintain 
+full ownership and rights of their method. 
+
+Teams must notify the organizers of any publication that is (partly)
+based on the results data published as a direct by-product of the
+Data. This is for the organizers to maintain a list of publications
+associated with the challenge. 
+
+University College of London, Ecole Polytechnique de Montreal, 
+University of Zurich and Vanderbilt University own the entire rights, 
+title, and interest in and to the Data.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Contributors:
+
+Julien Cohen-Adad, Ecole Polytechnique de Montreal (Canada)
+Ferran Prados, University College London (United Kingdom)
+Bennet A. Landman, Vanderbilt University (United States)
+Patrick Freund, University of Zurich (Switzerland)
+Claudia A.M. Gandini Wheeler-Kingshott, University College London (United Kingdom)
+Paul Summers, University of Modena (Italy)
+Sara Dupont, Ecole Polytechnique de Montreal (Canada)
+Marios Yiannakas, University College London (United Kingdom)
+Seth Smith, Vanderbilt University (United States)
+David Gergely, University of Zurich (Switzerland)
+Benjamin De Leener, Ecole Polytechnique de Montreal (Canada)
+Francesco Grussu, University College London (United Kingdom)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Acknowledgment: 
+
+If you use the Data please refer to the following website:
+
+http://cmictig.cs.ucl.ac.uk/niftyweb/program.php?p=CHALLENGE
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Copyright: 
+
+Copyright (c) 2016 University College of London, Ecole Polytechnique 
+de Montreal, University of Zurich and Vanderbilt University
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
