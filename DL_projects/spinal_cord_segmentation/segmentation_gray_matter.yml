@@ -1,0 +1,17 @@
+name: segmentation_gray_matter
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - jupyter
+  - pip
+  - pip:
+      - nibabel
+      - matplotlib
+      - numpy
+      - opencv-python
+      - torch
+      - albumentations
+      - scikit-learn
+      - scipy
+      

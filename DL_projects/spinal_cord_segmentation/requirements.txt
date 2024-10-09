@@ -1,0 +1,9 @@
+nibabel
+matplotlib
+numpy
+opencv-python
+torch
+albumentations
+scikit-learn
+scipy
+jupyter
