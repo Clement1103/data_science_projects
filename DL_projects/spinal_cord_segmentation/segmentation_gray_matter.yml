@@ -1,17 +1,19 @@
 name: segmentation_gray_matter
 channels:
   - defaults
+  - conda-forge  
 dependencies:
-  - python=3.9
+  - python=3.9  
   - jupyter
+  - nibabel
+  - matplotlib
+  - numpy
+  - opencv
+  - pytorch
+  - torchvision
+  - scikit-learn
+  - scipy
   - pip
   - pip:
-      - nibabel
-      - matplotlib
-      - numpy
-      - opencv-python
-      - torch
       - albumentations
-      - scikit-learn
-      - scipy
-      
+
