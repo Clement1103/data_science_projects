@@ -9,9 +9,9 @@ Voici pour l'instant les projets réalisés :
 - Classifications d'athlètes à l'aide de modèles de ML : traitement d'images, feature extraction à l'aide d'haar cascade, différentes transformations d'images, GridSearchCV
 - Génération de mélodies avec des RNN : traitement de données musicales avec la librairie music21, génération d'un dataset à partir de séries temporelles, RNN, LSTM (Tensorflow) (consulter le README propre au projet)
 - Détection d'anomalies dans un ECG : séries temporelles, LSTM auto-encoder (Pytorch)
-- Actuellement en train de travailler sur un projet de segmentation automatique de matière grise dans les IRM de moelle épinière : images nifti, masques, U-net (Pytorch)
+- Segmentation automatique de matière grise dans les IRM de moelle épinière : images nifti, masques, U-net (Pytorch)
 
-Ce sont pour l'instant les premiers projets que j'ai réalisés. Certains concepts clés n'ont pas encore été illustrés, comme par exemple les CNN, parce que j'y ai consacré beaucoup de temps lors de mon dernier stage effectué à Orange. Je serai ravi de vous présenter ce travail pendant un entretien s'il vous intéresse.
+Ce sont pour l'instant les premiers projets que j'ai réalisés. 
 J'ai l'intention de rajouter rapidement de nouveaux projets, notamment en NLP, domaine sur lequel je me forme actuellement. 
 
 ## 📝 Installation 
@@ -56,9 +56,9 @@ For the moment, here are the completed projects:
 - Athlete classifications using ML models: image processing, feature extraction using haar cascade, various image transformations, GridSearchCV
 - Melody generation with RNN: music data processing with the music21 library, dataset generation from time series, RNN, LSTM (Tensorflow) (see project-specific README)
 - ECG anomaly detection: time series, LSTM auto-encoder (Pytorch)
-- Currently working on a gray-matter segmentation project in spinal cord MRI : nifti files, masks, U-net (Pytorch)
+- Gray-matter segmentation project in spinal cord MRIs : nifti files, masks, U-net (Pytorch)
 
-So far, these are the first projects I've completed. Some key concepts have not yet been illustrated, such as CNNs, because I spent a lot of time on them during my last internship at Orange. I'd be delighted to present this work to you during an interview if you're interested.
+So far, these are the first projects I've completed. 
 I intend to quickly add new projects, particularly in NLP, a field in which I'm currently training. 
 
 ## 📝 Installation 
