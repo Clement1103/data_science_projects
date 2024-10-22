@@ -3,9 +3,7 @@
 Bonjour,
 
 Je m'appelle Clément Baraille et je suis un étudiant nouvellement diplômé de l'école d'ingénieur Grenoble-INP Phelma. A travers mes stages, je me suis découvert un intérêt particulier pour la Data Science, particulièrement dans le domaine de la santé. 
-C'est pour cette raison que je me suis auto-formé, en apprenant les fondamentaux du Machine Learning et du Deep Learning. En plus des leçons que j'ai prises, j'ai essayé de réaliser quelques projets, conciliés dans ce dépôt que je tiens à jour très régulièrement. 
-Les sujets sont variés et n'ont pas de lien entre eux, mais m'ont permis d'explorer différents types de données.
-Voici pour l'instant les projets réalisés : 
+C’est pour cette raison que j’approfondis les connaissances acquises lors de mon dernier stage au sein d’Orange, par une auto-formation rigoureuse sur les fondamentaux du Machine Learning et du Deep Learning. En complément de mon apprentissage, j'ai réalisé quelques projets, consignés dans ce dépôt que je tiens à jour très régulièrement. Les sujets sont variés et n'ont pas de lien entre eux, mais m'ont permis d'explorer différents types de données. Voici pour l'instant les projets réalisés :  
 - Prédiction de loyers de maison à partir de données tabulaires : dataframes, nettoyage des données, outliers removal, GridSearchCV
 - Classifications d'athlètes à l'aide de modèles de ML : traitement d'images, feature extraction à l'aide d'haar cascade, différentes transformations d'images, GridSearchCV
 - Génération de mélodies avec des RNN : traitement de données musicales avec la librairie music21, génération d'un dataset à partir de séries temporelles, RNN, LSTM (Tensorflow) (consulter le README propre au projet)
@@ -13,8 +11,7 @@ Voici pour l'instant les projets réalisés :
 - Segmentation automatique de matière grise dans les IRM de moelle épinière : images nifti, masques, U-net (Pytorch)
 - Je suis actuellement en train de travailler sur un chatbot permettant de répondre à certaines questions d'un collaborateur à propos de divers produits de santé dans une entreprise fictive.
 
-Ce sont pour l'instant les premiers projets que j'ai réalisés. 
-J'ai l'intention de rajouter rapidement de nouveaux projets, notamment en NLP, domaine sur lequel je me forme actuellement. 
+Ce sont pour l'instant les premiers projets que j'ai réalisés. J'ai l'intention d’en rajouter rapidement de nouveaux, notamment en NLP, domaine sur lequel je me forme actuellement.
 
 ## 📝 Installation 
 
@@ -50,10 +47,9 @@ Bonne journée !
 ## 💭 Presentation
 Hello,
 
-My name is Clément Baraille and I'm a recent graduate of Grenoble-INP Phelma engineering school. Through my internships, I discovered a particular interest in Data Science, particularly in the healthcare field. 
-That's why I self-taught myself, learning the fundamentals of Machine Learning and Deep Learning. In addition to the lessons I've taken, I've tried my hand at a few projects, reconciled in this repository which I update very regularly. 
-The subjects are varied and unrelated, but have enabled me to explore different types of data.
-For the moment, here are the completed projects: 
+My name is Clément Baraille and I'm a recent graduate of Grenoble-INP Phelma engineering school. Through my internships, I have discovered a particular interest in Data Science, particularly in the healthcare field. 
+That's why I'm deepening the knowledge I acquired during my last internship with Orange, through rigorous self-training on the fundamentals of Machine Learning and Deep Learning. In addition to my apprenticeship, I have carried out a number of projects, which are recorded in this repository that I update regularly. The subjects are varied and unrelated, but have enabled me to explore different types of data. 
+For now, here are the projects I've completed:  
 - House rent prediction from tabular data: dataframes, data cleaning, outlier removal, GridSearchCV
 - Athlete classifications using ML models: image processing, feature extraction using haar cascade, various image transformations, GridSearchCV
 - Melody generation with RNN: music data processing with the music21 library, dataset generation from time series, RNN, LSTM (Tensorflow) (see project-specific README)
@@ -87,7 +83,6 @@ jupyter notebook
 
 ## 💡 Closing remarks
 
-I hope these projects will interest you as much as they have interested me, and that I'll have the opportunity to demonstrate my skills to you.
-Finally, I'm always open to any project suggestions, or feedback on this repository.
+So far, these are the first projects I've completed. I intend to add new ones soon, especially in NLP, a field I'm currently training in.
 
 Have a nice day!
