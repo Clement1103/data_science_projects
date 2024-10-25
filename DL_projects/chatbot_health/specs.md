@@ -70,6 +70,7 @@ INTENTS :
 - Présenter produits
 - Saisir l'intérêt 
 - Saisir le désintérêt
+- Complete presentation
 - Fallback 
 - Prise de RDV
 - Saisir l'adresse mail / le numéro de téléphone (+ confirmation ?).
@@ -77,3 +78,5 @@ INTENTS :
 CONTEXTS : 
 - Ongoing présentation
 - Ongoing organisation rdv
+- Interest capture
+- 
