@@ -17,14 +17,16 @@ La génération de données synthétiques
 L'analyse prédictive pour les soins de santé
 Seriez-vous intéressée par l'un de ces produits ? Ou peut-être souhaitez-vous une solution plus personnalisée ?
 *USER* : Parlez-moi de l'aide au diagnostic.
-*BOT* : Bien sûr ! Notre solution d’aide au diagnostic utilise des algorithmes avancés pour assister les professionnels de la santé dans leurs décisions médicales. Nous combinons l’IA et l'analyse de données médicales pour fournir des recommandations précises en temps réel.
+*BOT* : [Présentation produit 1]
 Est-ce que cela correspond à vos besoins ?
 *USER* : Oui, tout à fait.
-*BOT* : Je suis ravi que cela vous intéresse ! Souhaitez-vous parler à un de nos experts pour discuter plus en détail de cette solution ?
+*BOT* : Je suis ravi que cela vous intéresse ! Souhaitez-vous en savoir plus sur un autre produit ?
+*USER* : Non.
+*BOT* : Désirez-vous parler à un de nos experts pour discuter plus en détail de cette solution ?
 *USER* : Oui, j'aimerais bien.
 *BOT* : Super ! Pour organiser un rendez-vous, pourriez-vous me fournir votre adresse e-mail, s'il vous plaît ?
 *USER* : julie@example.com
-*BOT* : Merci Julie. Un de nos experts vous contactera à l’adresse julie@example.com d’ici demain pour planifier un rendez-vous. À bientôt !
+*BOT* : Merci. Un de nos experts vous contactera à l’adresse julie@example.com d’ici demain pour planifier un rendez-vous. À bientôt !
 
 
 **Exemple 2**:
@@ -34,10 +36,10 @@ L'aide au diagnostic
 La génération de données synthétiques
 L'analyse prédictive pour les soins de santé
 *USER* : Dites-moi d'abord ce qu'est la génération de données synthétiques.
-*BOT* : Notre solution de génération de données synthétiques permet de créer des jeux de données réalistes pour l'entraînement de modèles, la recherche médicale ou des tests logiciels, sans compromettre les données personnelles des patients.
+*BOT* : [Présentation produit 1]
 Est-ce que cela correspond à ce que vous recherchez ?
 *USER* : Pas exactement. Et l'analyse prédictive, c'est quoi ?
-*BOT* : L’analyse prédictive pour les soins de santé utilise des algorithmes de machine learning pour prédire l'évolution des maladies et proposer des interventions proactives. Cela peut aider à prévenir des complications avant qu’elles ne surviennent.
+*BOT* : [Présentation produit 2]
 Pensez-vous que cela pourrait vous être utile ?
 *USER* : Peut-être, mais ce n'est pas ce que je recherche non plus.
 *BOT* : Je comprends. D’après ce que vous m'avez dit, je pense que notre solution d’aide au diagnostic pourrait mieux correspondre à vos besoins. Elle permet d'assister les médecins avec des recommandations précises basées sur l’analyse des données médicales.
@@ -57,13 +59,13 @@ La génération de données synthétiques
 L'analyse prédictive pour les soins de santé
 Lequel vous intéresse ?
 *USER* : L'analyse prédictive, c'est pour quoi ?
-*BOT* : L’analyse prédictive aide à anticiper les risques médicaux en analysant les données passées des patients. Cela permet d’intervenir avant qu'une maladie ne progresse. Souhaitez-vous que je vous donne un exemple concret de son application ?
+*BOT* : [Présentation produit 1]
 *USER* : Ça marche comment en cas de problème rénal ?
 *BOT* : Je suis désolé, je n’ai pas suffisamment d'informations spécifiques sur les problèmes rénaux à ce stade. Souhaitez-vous que je vous mette en contact avec un expert pour plus de détails ?
 *USER* : Oui, s'il vous plaît.
 *BOT* : Merci. Pour cela, pourriez-vous me fournir votre adresse e-mail afin qu'un expert vous contacte ?
 *USER* : user@example.com
-*BOT* : Merci. Un expert vous contactera sous 24 heures à user@example.com pour répondre à toutes vos questions.
+*BOT* : Merci. Un expert vous contactera sous 24 heures à julie@example.com pour répondre à toutes vos questions.
 
 INTENTS : 
 - Default Welcome Intent
@@ -79,4 +81,9 @@ CONTEXTS :
 - Ongoing présentation
 - Ongoing organisation rdv
 - Interest capture
-- 
+- Fallback presentation
+
+BACKEND : 
+- Récupérer l'intérêt de l'utilisateur après la présentation des produits
+- Faire vérifier l'adresse mail / le numéro de téléphone
+- Ajouter les infos de contact + les sujets d'intérêt à une BDD pour gérer la prise de rdv.
