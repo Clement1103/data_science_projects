@@ -86,4 +86,5 @@ CONTEXTS :
 BACKEND : 
 - Récupérer l'intérêt de l'utilisateur après la présentation des produits
 - Faire vérifier l'adresse mail / le numéro de téléphone
+- Si l'utilisateur n'a manifesté d'intérêt pour aucun des produits, ne rien faire (pas demander les infos de contact). Proposer de parler d'un projet particulier ?
 - Ajouter les infos de contact + les sujets d'intérêt à une BDD pour gérer la prise de rdv.
