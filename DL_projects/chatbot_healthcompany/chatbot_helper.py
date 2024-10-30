@@ -39,7 +39,7 @@ def check_coordinates(parameters):
                            f'Email address: {email_address}\n'
                            f'Phone number: {phone_nb}')
 
-    return fulfillmentText
+    return fulfillmentText, email_address, phone_nb
 
 def coordinates_correct():
     pass
