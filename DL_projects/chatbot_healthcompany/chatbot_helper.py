@@ -41,8 +41,15 @@ def check_coordinates(parameters):
 
     return fulfillmentText
 
+def coordinates_correct():
+    pass
+
+def get_session_id(context: str):
+    match = re.search(r'sessions/(.*?)/contexts', context)
+    return match.group(1) if match else None
 
 if __name__ == '__main__':
+    context = 'projects/chatbot-health-wmdg/agent/sessions/cbb0e726-3d6e-26fe-8f98-7e3fd513eb5a/contexts/ongoing-presentation'
     intent = 'presentation.SyntheMedix - context: ongoing-presentation'
     # intent_bis = 'coordinates.incorrect'
     # intent_ter = 'presentation.ForecastMed - context: interest-capture'
@@ -57,3 +64,4 @@ if __name__ == '__main__':
     print('Expected: -1 === got: ', check_interest(intent))
     print('Expected: True === got: ', check_interest(intent_interest))
     print('Expected: False === got: ', check_interest(intent_disinterest))
+    # print(get_session_id(context))
