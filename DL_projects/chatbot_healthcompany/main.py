@@ -32,18 +32,15 @@ async def handle_request(request: Request):
 
     if check_if_presentation_product(intent):
         user_session['product_tmp'] = get_product_name(intent)
-        print('Produit capté :', user_session['product_tmp'])
+        # print('Produit capté :', user_session['product_tmp'])
 
     is_interested = check_interest(intent)
-    print('IS INTERESTED: ', is_interested)
-    print('PRODUCT TMP: ', user_session['product_tmp'])
+    # print('IS INTERESTED: ', is_interested)
+    # print('PRODUCT TMP: ', user_session['product_tmp'])
 
     if is_interested is True and user_session['product_tmp']:
         user_session['list_interests'].append(user_session['product_tmp'])
         user_session['product_tmp'] = ''
-
-    print('====', user_session['list_interests'], '====')
-    print('==========', user_session, '==========')
 
     if intent == 'check.coordinates' or intent == 'coordinates.incorrect':
         (fulfillmentText, email, phone_nb) = check_coordinates(parameters)
@@ -58,3 +55,8 @@ async def handle_request(request: Request):
         user_session['phone'] = user_session['phone_tmp']
         user_session['email_tmp'] = ''
         user_session['phone_tmp'] = ''
+        save_to_db(user_session)
+        user_session['list_interests'] = []
+
+    # print('====', user_session['list_interests'], '====')
+    # print('==========', user_session, '==========')
