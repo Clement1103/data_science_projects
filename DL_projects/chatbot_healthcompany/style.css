@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+#produits, #chatbot {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.produit {
+    background-color: #e0f7fa;
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 5px;
+}
+
+#chatbot {
+    text-align: center;
+    margin-top: 2em;
+}
+
+/* Style pour Dialogflow Messenger */
+df-messenger {
+    --df-messenger-bot-message: #4CAF50;
+    --df-messenger-button-titlebar-color: #4CAF50;
+    --df-messenger-font-color: white;
+}
+
