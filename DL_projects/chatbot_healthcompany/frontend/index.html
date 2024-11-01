@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FictiveDataHealthCompany</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+    <header>
+        <h1>FictiveDataHealthCompany</h1>
+    </header>
+    
+    <nav>
+        <div class="nav-left">
+            <a href="#expertise">Expertise</a>
+            <a href="#mediag">MedIAg</a>
+            <a href="#synthemedix">SyntheMedix</a>
+            <a href="#forecastmed">ForecastMed</a>
+        </div>
+        
+        <img src="logo_nav.png" alt="Logo" class="nav-logo"> <!-- Remplacez par l'URL de votre logo -->
+        
+        <div class="nav-right">
+            <a href="#qui-sommes-nous">Who are we?</a>
+            <a href="#actualite">News</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    
+    <section id="produits">
+        <div class="produit">
+            <img src="logo_produit1.png" alt="Logo Produit 1"> <!-- Remplacez par l'URL de votre logo -->
+            <h2>MedIAg</h2>
+            <p>Description du produit 1.</p>
+        </div>
+        <div class="produit">
+            <img src="logo_produit2.png" alt="Logo Produit 2"> <!-- Remplacez par l'URL de votre logo -->
+            <h2>SyntheMedix</h2>
+            <p>Description du produit 2.</p>
+        </div>
+        <div class="produit">
+            <img src="logo_produit3.png" alt="Logo Produit 3"> <!-- Remplacez par l'URL de votre logo -->
+            <h2>ForecastMed</h2>
+            <p>Description du produit 3.</p>
+        </div>
+        <div class="produit">
+            <img src="logo_produit4.png" alt="Logo Produit 4"> <!-- Remplacez par l'URL de votre logo -->
+            <h2>Custom service</h2>
+            <p>Description du produit 4.</p>
+        </div>
+    </section>
+    
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="chatbot_health"
+      agent-id="6e283bce-aca7-40af-980a-e63f427abc27"
+      language-code="en"
+    ></df-messenger>
+    
+</body>
+</html>
+
