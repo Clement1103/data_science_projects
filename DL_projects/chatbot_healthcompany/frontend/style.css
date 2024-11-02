@@ -100,4 +100,19 @@ df-messenger {
     --df-messenger-chip-border-color: #e0e0e0;
 }
 
+.see-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    color: #ffffff;
+    background-color: #007bff; /* Couleur de fond */
+    border-radius: 5px;
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Effet de transition */
+}
 
+.see-more:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
