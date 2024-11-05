@@ -10,13 +10,26 @@ database_name = os.getenv("DATABASE_NAME")
 database_user = os.getenv("DATABASE_USER")
 database_password = os.getenv("DATABASE_PASSWORD")
 
+
 global cnx
-cnx = mysql.connector.connect(
-    host=database_host,
-    user=database_name,
-    password=database_password,
-    database=database_name
-)
+global is_connected
+
+cnx=''
+is_connected=False
+
+try:
+    cnx = mysql.connector.connect(
+        host=database_host,
+        user=database_user,
+        password=database_password,
+        database=database_name,
+        connection_timeout=15
+    )
+    if cnx.is_connected():
+        is_connected = True
+
+except mysql.connector.Error as e:
+    is_connected = False
 
 def get_next_customer_id():
     cursor = cnx.cursor()

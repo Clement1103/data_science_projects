@@ -1,13 +1,14 @@
 from fastapi import FastAPI, Request
+import os
+import uvicorn
 from fastapi.responses import JSONResponse
-from db_helper import *
-from chatbot_helper import *
+from .db_helper import *
+from .chatbot_helper import *
 
 app = FastAPI()
 
 # uvicorn main:app --reload
 # ngrok http 8000
-
 
 sessions = {}
 
@@ -25,27 +26,29 @@ async def handle_request(request: Request):
     if session_id not in sessions:
         sessions[session_id] = {
             'product_tmp': None,
-            'list_interests': []
+            'list_interests': [],
+            'email_tmp':'',
+            'phone_tmp':''
         }
 
     user_session = sessions[session_id]
 
     if check_if_presentation_product(intent):
         user_session['product_tmp'] = get_product_name(intent)
-        # print('Produit capté :', user_session['product_tmp'])
+        print('Produit capté :', user_session['product_tmp'])
 
     is_interested = check_interest(intent)
-    # print('IS INTERESTED: ', is_interested)
-    # print('PRODUCT TMP: ', user_session['product_tmp'])
+    print('IS INTERESTED: ', is_interested)
+    print('PRODUCT TMP: ', user_session['product_tmp'])
 
     if is_interested is True and user_session['product_tmp']:
         user_session['list_interests'].append(user_session['product_tmp'])
-        user_session['product_tmp'] = ''
+        #user_session['product_tmp'] = ''
 
     if intent == 'check.coordinates' or intent == 'coordinates.incorrect':
         (fulfillmentText, email, phone_nb) = check_coordinates(parameters)
         user_session['email_tmp']=email
-        user_session['phone_tmp'] = phone_nb
+        user_session['phone_tmp']=phone_nb
         return JSONResponse(content={
             'fulfillmentText': fulfillmentText
         })
@@ -53,10 +56,18 @@ async def handle_request(request: Request):
     if intent == 'coordinates.correct':
         user_session['email'] = user_session['email_tmp']
         user_session['phone'] = user_session['phone_tmp']
+        print('is connected var:', is_connected)
+        if is_connected:
+            print(f'DICT TO SAVE:{user_session}')
+            save_to_db(user_session)
         user_session['email_tmp'] = ''
         user_session['phone_tmp'] = ''
-        save_to_db(user_session)
         user_session['list_interests'] = []
 
-    # print('====', user_session['list_interests'], '====')
-    # print('==========', user_session, '==========')
+    print('====', user_session['list_interests'], '====')
+    print('==========', user_session, '==========')
+
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run("backend.main:app", host="0.0.0.0", port=port)
+
