@@ -1,12 +1,21 @@
 import mysql.connector
+import os
 from datetime import datetime
-global cnx
+from dotenv import load_dotenv
 
+load_dotenv('database.env')
+
+database_host = os.getenv("DATABASE_HOST")
+database_name = os.getenv("DATABASE_NAME")
+database_user = os.getenv("DATABASE_USER")
+database_password = os.getenv("DATABASE_PASSWORD")
+
+global cnx
 cnx = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='Baraille11',
-    database='chatbot_health'
+    host=database_host,
+    user=database_name,
+    password=database_password,
+    database=database_name
 )
 
 def get_next_customer_id():

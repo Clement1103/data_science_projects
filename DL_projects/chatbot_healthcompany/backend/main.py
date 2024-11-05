@@ -7,7 +7,7 @@ app = FastAPI()
 
 # uvicorn main:app --reload
 # ngrok http 8000
-# tunnel non-temporaire ? https://sawfly-wanted-constantly.ngrok-free.app
+
 
 sessions = {}
 

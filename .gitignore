@@ -2,3 +2,4 @@ sports_celebrities_classification/images_dataset/cropped/
 .ipynb_checkpoints/
 DL_projects/spinal_cord_segmentation/data_formated/
 DL_projects/chatbot_healthcompany/__pycache__/
+DL_projects/chatbot_healthcompany/database.env
