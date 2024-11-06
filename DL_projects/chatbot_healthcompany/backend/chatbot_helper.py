@@ -48,20 +48,22 @@ def get_session_id(context: str):
     match = re.search(r'sessions/(.*?)/contexts', context)
     return match.group(1) if match else None
 
-# if __name__ == '__main__':
-#     context = 'projects/chatbot-health-wmdg/agent/sessions/cbb0e726-3d6e-26fe-8f98-7e3fd513eb5a/contexts/ongoing-presentation'
-#     intent = 'presentation.SyntheMedix - context: ongoing-presentation'
-#     # intent_bis = 'coordinates.incorrect'
-#     # intent_ter = 'presentation.ForecastMed - context: interest-capture'
-#     # product_name = get_product_name(intent)
-#     # print(product_name)
+if __name__ == '__main__':
+    context = 'projects/chatbot-health-wmdg/agent/sessions/cbb0e726-3d6e-26fe-8f98-7e3fd513eb5a/contexts/ongoing-presentation'
+    intent = 'presentation.SyntheMedix - context: ongoing-presentation'
+    intent_bis = 'coordinates.incorrect'
+    intent_ter = 'presentation.ForecastMed - context: interest-capture'
+    # product_name = print(f'intent1: {get_product_name(intent)}')
+    # product_name = print(f'intent2: {get_product_name(intent_bis)}')
+    # product_name = print(f'intent3: {get_product_name(intent_ter)}')
+    # print(product_name)
 #     # print('================')
-#     # print(check_if_presentation_product(intent))
-#     # print(check_if_presentation_product(intent_ter))
-#     # print(check_if_presentation_product(intent_bis))
+#     print(check_if_presentation_product(intent))
+#     print(check_if_presentation_product(intent_bis))
+#     print(check_if_presentation_product(intent_ter))
 #     intent_interest = 'capture.of.interest - context: ongoing presentation'
 #     intent_disinterest = 'capture.of.disinterest - context: ongoing presentation'
 #     print('Expected: -1 === got: ', check_interest(intent))
 #     print('Expected: True === got: ', check_interest(intent_interest))
 #     print('Expected: False === got: ', check_interest(intent_disinterest))
-#     # print(get_session_id(context))
+    print(get_session_id(context))
