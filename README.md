@@ -9,7 +9,7 @@ C’est pour cette raison que j’approfondis les connaissances acquises lors de
 - Génération de mélodies avec des RNN : traitement de données musicales avec la librairie music21, génération d'un dataset à partir de séries temporelles, RNN, LSTM (Tensorflow) (consulter le README propre au projet)
 - Détection d'anomalies dans un ECG : séries temporelles, LSTM auto-encoder (Pytorch)
 - Segmentation automatique de matière grise dans les IRM de moelle épinière : images nifti, masques, U-net (Pytorch)
-- Je suis actuellement en train de travailler sur un chatbot permettant de répondre à certaines questions d'un collaborateur à propos de divers produits de santé dans une entreprise fictive.
+- Chatbot permettant de répondre à certaines questions d'un collaborateur à propos de divers produits de santé dans une entreprise fictive : NLP, Dialogflow, SQL, frontend.
 
 Ce sont pour l'instant les premiers projets que j'ai réalisés. J'ai l'intention d’en rajouter rapidement de nouveaux, notamment en NLP, domaine sur lequel je me forme actuellement.
 
@@ -34,6 +34,7 @@ jupyter notebook
 
 **Néanmoins, pour éviter d'avoir à installer cela, j'ai téléchargé les notebooks en pdf, qui sont consultables sans environnement.**
 
+Par ailleurs, pour chaque projet, les jeux de données sont placés dans des dossiers zip. Il est nécessaire de les décompresser si vous souhaitez exécuter les notebooks.
 
 ## 💡 Mot de la fin
 
@@ -55,7 +56,7 @@ For now, here are the projects I've completed:
 - Melody generation with RNN: music data processing with the music21 library, dataset generation from time series, RNN, LSTM (Tensorflow) (see project-specific README)
 - ECG anomaly detection: time series, LSTM auto-encoder (Pytorch)
 - Gray-matter segmentation project in spinal cord MRIs : nifti files, masks, U-net (Pytorch)
-- Currently working on a chatbot which aims to answer questions about health products from a fictive company.
+- Chatbot to answer certain questions from an employee about various healthcare products in a fictitious company: NLP, Dialogflow, SQL, frontend.
 
 So far, these are the first projects I've completed. 
 I intend to quickly add new projects, particularly in NLP, a field in which I'm currently training. 
@@ -80,6 +81,8 @@ jupyter notebook
 ```
 
 **However, to avoid having to install this, I've downloaded the notebooks as pdf files, which can be viewed without an environment.**
+
+In addition, for each project, datasets are stored in zip folders. These need to be unzipped if you wish to run the notebooks.
 
 ## 💡 Closing remarks
 
