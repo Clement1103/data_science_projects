@@ -10,8 +10,8 @@ C’est pour cette raison que j’approfondis les connaissances acquises lors de
 - Détection d'anomalies dans un ECG : séries temporelles, LSTM auto-encoder (Pytorch)
 - Segmentation automatique de matière grise dans les IRM de moelle épinière : images nifti, masques, U-net (Pytorch)
 - Chatbot permettant de répondre à certaines questions d'un collaborateur à propos de divers produits de santé dans une entreprise fictive : NLP, Dialogflow, SQL, frontend.
+- Fine-tuning d'un modèle Bert pour répondre à une tâche de classification de titres d'articles : Sagemaker, HuggingFace, Pytorch
 
-Ce sont pour l'instant les premiers projets que j'ai réalisés. J'ai l'intention d’en rajouter rapidement de nouveaux, notamment en NLP, domaine sur lequel je me forme actuellement.
 
 ## 📝 Installation 
 
@@ -57,6 +57,7 @@ For now, here are the projects I've completed:
 - ECG anomaly detection: time series, LSTM auto-encoder (Pytorch)
 - Gray-matter segmentation project in spinal cord MRIs : nifti files, masks, U-net (Pytorch)
 - Chatbot to answer certain questions from an employee about various healthcare products in a fictitious company: NLP, Dialogflow, SQL, frontend.
+- LLM fine-tuning for article titles classification: Sagemaker, HuggingFace, Pytorch
 
 So far, these are the first projects I've completed. 
 I intend to quickly add new projects, particularly in NLP, a field in which I'm currently training. 
