@@ -1,0 +1,10 @@
+jupyter
+transformers
+sagemaker
+pandas
+numpy
+python-dotenv
+scikit-learn
+matplotlib
+seaborn
+
