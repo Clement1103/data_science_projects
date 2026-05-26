@@ -1,92 +1,121 @@
----------- ENGLISH VERSION BELOW ----------
+# Clément Baraille — Data Science Projects
+
 ## 💭 Présentation
-Bonjour,
 
-Je m'appelle Clément Baraille et je suis un étudiant nouvellement diplômé de l'école d'ingénieur Grenoble-INP Phelma. A travers mes stages, je me suis découvert un intérêt particulier pour la Data Science, particulièrement dans le domaine de la santé. 
-C’est pour cette raison que j’approfondis les connaissances acquises lors de mon dernier stage au sein d’Orange, par une auto-formation rigoureuse sur les fondamentaux du Machine Learning et du Deep Learning. En complément de mon apprentissage, j'ai réalisé quelques projets, consignés dans ce dépôt que je tiens à jour très régulièrement. Les sujets sont variés et n'ont pas de lien entre eux, mais m'ont permis d'explorer différents types de données. Voici pour l'instant les projets réalisés :  
-- Prédiction de loyers de maison à partir de données tabulaires : dataframes, nettoyage des données, outliers removal, GridSearchCV
-- Classifications d'athlètes à l'aide de modèles de ML : traitement d'images, feature extraction à l'aide d'haar cascade, différentes transformations d'images, GridSearchCV
-- Génération de mélodies avec des RNN : traitement de données musicales avec la librairie music21, génération d'un dataset à partir de séries temporelles, RNN, LSTM (Tensorflow) (consulter le README propre au projet)
-- Détection d'anomalies dans un ECG : séries temporelles, LSTM auto-encoder (Pytorch)
-- Segmentation automatique de matière grise dans les IRM de moelle épinière : images nifti, masques, U-net (Pytorch)
-- Chatbot permettant de répondre à certaines questions d'un collaborateur à propos de divers produits de santé dans une entreprise fictive : NLP, Dialogflow, SQL, frontend.
-- Fine-tuning d'un modèle Bert pour répondre à une tâche de classification de titres d'articles : Sagemaker, HuggingFace, Pytorch
+Ingénieur diplômé de Grenoble-INP Phelma, je travaille comme Data Scientist avec une spécialisation en modèles de langage (LLM). Après une première expérience professionnelle chez Orange (classification, clustering, deep learning), je suis actuellement Data Scientist chez NVEIL à Grenoble, où je conçois et développe le micro-service IA d'un logiciel de visualisation analytique pilotée par chatbot — incluant l'orchestration d'un pipeline LLM + ASP via LangGraph, une abstraction multi-fournisseurs et une gestion de l'observabilité d'inférence en production.
 
+Je suis à la recherche active de nouvelles opportunités pour continuer à progresser sur des problématiques IA exigeantes, dans un environnement collaboratif et stimulant.
 
-## 📝 Installation 
+---
 
-Dans le cas où vous voudriez ouvrir mes projets sur votre machine, j'ai créé des fichiers requirements.txt, ainsi que des fichiers .yml permettant de reproduire l'environnement conda (un pour les deux projets de ML, et un par projet de DL).
+## ⚠️ Note sur ce dépôt
 
-Pour reproduire mon environnement conda si conda est déjà installé sur votre machine :
-```
+Les projets présentés ici ont été réalisés **en 2023-2024**, dans le cadre de mon auto-formation en Data Science, peu après ma sortie d'école. Ils ont avant tout une vocation exploratoire et pédagogique.
+
+Je suis tout à fait conscient qu'ils ne reflètent pas les standards attendus en milieu professionnel : pas de tests unitaires, peu de modularité, gestion des dépendances perfectible, et absence de considérations MLOps (monitoring, reproductibilité, versioning des modèles…).
+
+Ces points constituent précisément ce que j'ai appris à adresser lors de mon expérience chez NVEIL — conception orientée production, observabilité par tour, gestion des coûts d'inférence, timeouts et budgets de retry. Mes réalisations professionnelles récentes ne sont pas publiques, mais je suis toujours disponible pour en discuter.
+
+---
+
+## 📂 Projets réalisés
+
+Les sujets sont variés et m'ont permis d'explorer différents types de données et paradigmes de modélisation :
+
+- **Prédiction de loyers** à partir de données tabulaires — nettoyage, outliers, GridSearchCV
+- **Classification d'athlètes** — traitement d'images, extraction de features (Haar cascade), GridSearchCV
+- **Génération de mélodies avec des RNN** — données musicales (music21), séries temporelles, LSTM (TensorFlow)
+- **Détection d'anomalies dans un ECG** — séries temporelles, LSTM auto-encoder (PyTorch)
+- **Segmentation de matière grise dans des IRM de moelle épinière** — fichiers NIfTI, masques, U-Net (PyTorch)
+- **Chatbot de réponse aux questions collaborateurs** — NLP, Dialogflow, SQL, frontend
+- **Fine-tuning de BERT pour la classification de titres d'articles** — SageMaker, HuggingFace, PyTorch
+
+Un nouveau projet est actuellement en cours de finalisation et sera ajouté prochainement.
+
+---
+
+## 📝 Installation
+
+Des fichiers `requirements.txt` et `.yml` sont disponibles pour reproduire les environnements conda.
+
+```bash
+# Reproduire l'environnement conda
 conda env create -f <fichier.yml>
-conda env list # pour trouver le nom de l'environnement
-conda activate <nom_de_l'environnement>
-```
-Ou bien pour installer dans un environnement existant à l'aide de pip : 
-```
+conda activate <nom_de_l_environnement>
+
+# Ou via pip dans un environnement existant
 pip install -r requirements.txt
-```
-Ensuite, les notebooks peuvent être consultés à l'aide de :
-```
+
+# Lancer les notebooks
 jupyter notebook
 ```
 
-**Néanmoins, pour éviter d'avoir à installer cela, j'ai téléchargé les notebooks en pdf, qui sont consultables sans environnement.**
+> Pour éviter toute installation, les notebooks sont également disponibles en PDF directement consultables.  
+> Les jeux de données sont dans des dossiers `.zip` à décompresser avant exécution.
 
-Par ailleurs, pour chaque projet, les jeux de données sont placés dans des dossiers zip. Il est nécessaire de les décompresser si vous souhaitez exécuter les notebooks.
+---
 
 ## 💡 Mot de la fin
 
-J'espère que ces projets vous intéresseront autant qu'ils m'ont intéressé, et que j'aurai l'occasion de vous démontrer mes compétences.
-Enfin, je suis toujours ouvert à une quelconque suggestion de projet, ou encore aux remarques concernant ce dépôt.
+Bonne lecture — et n'hésitez pas à me contacter si vous souhaitez échanger sur mes travaux plus récents ou discuter d'une opportunité.
 
-Bonne journée !
+---
 
-===========================
+*English version below.*
+
+---
+
+# Clément Baraille — Data Science Projects
 
 ## 💭 Presentation
-Hello,
 
-My name is Clément Baraille and I'm a recent graduate of Grenoble-INP Phelma engineering school. Through my internships, I have discovered a particular interest in Data Science, particularly in the healthcare field. 
-That's why I'm deepening the knowledge I acquired during my last internship with Orange, through rigorous self-training on the fundamentals of Machine Learning and Deep Learning. In addition to my apprenticeship, I have carried out a number of projects, which are recorded in this repository that I update regularly. The subjects are varied and unrelated, but have enabled me to explore different types of data. 
-For now, here are the projects I've completed:  
-- House rent prediction from tabular data: dataframes, data cleaning, outlier removal, GridSearchCV
-- Athlete classifications using ML models: image processing, feature extraction using haar cascade, various image transformations, GridSearchCV
-- Melody generation with RNN: music data processing with the music21 library, dataset generation from time series, RNN, LSTM (Tensorflow) (see project-specific README)
-- ECG anomaly detection: time series, LSTM auto-encoder (Pytorch)
-- Gray-matter segmentation project in spinal cord MRIs : nifti files, masks, U-net (Pytorch)
-- Chatbot to answer certain questions from an employee about various healthcare products in a fictitious company: NLP, Dialogflow, SQL, frontend.
-- LLM fine-tuning for article titles classification: Sagemaker, HuggingFace, Pytorch
+I'm a graduate engineer from Grenoble-INP Phelma, working as a Data Scientist with a specialization in large language models (LLMs). After an internship at Orange (classification, clustering, deep learning), I'm currently a Data Scientist at NVEIL in Grenoble, where I design and develop the AI microservice of an analytics visualization software driven by a chatbot — including LLM + ASP pipeline orchestration via LangGraph, multi-provider abstraction, and production inference observability.
 
-So far, these are the first projects I've completed. 
-I intend to quickly add new projects, particularly in NLP, a field in which I'm currently training. 
+I'm actively looking for new opportunities to keep growing on challenging AI problems, in a collaborative and stimulating environment.
 
-## 📝 Installation 
+---
 
-In case you'd like to open my projects on your machine, I've created requirements.txt files, as well as .yml files to reproduce the conda environment (one for the two ML projects, and one for each DL project).
+## ⚠️ Note on this repository
 
-To reproduce my conda environment if conda is already installed on your machine:
-```
-conda env create -f <fichier.yml>
-conda env list # to find the environment name
+The projects here were built in **2023–2024** as part of my self-directed Data Science training, shortly after graduating. They are exploratory and educational in nature.
+
+I'm fully aware they don't reflect professional production standards: no unit tests, limited modularity, improvable dependency management, and no MLOps considerations (monitoring, reproducibility, model versioning…).
+
+These are precisely the areas I've grown in during my time at NVEIL — production-oriented design, per-turn observability, inference cost tracking, timeouts and retry budgets. My more recent professional work isn't public, but I'm always happy to discuss it.
+
+---
+
+## 📂 Projects
+
+- **House rent prediction** from tabular data — cleaning, outlier removal, GridSearchCV
+- **Athlete classification** — image processing, Haar cascade feature extraction, GridSearchCV
+- **Melody generation with RNNs** — music data (music21), time series, LSTM (TensorFlow)
+- **ECG anomaly detection** — time series, LSTM auto-encoder (PyTorch)
+- **Gray matter segmentation in spinal cord MRIs** — NIfTI files, masks, U-Net (PyTorch)
+- **Employee Q&A chatbot** — NLP, Dialogflow, SQL, frontend
+- **BERT fine-tuning for article title classification** — SageMaker, HuggingFace, PyTorch
+
+A new project is currently being finalized and will be added soon.
+
+---
+
+## 📝 Installation
+
+```bash
+conda env create -f <file.yml>
 conda activate <environment_name>
-```
-Or to install in an existing environment using pip : 
-```
+
+# or via pip
 pip install -r requirements.txt
-```
-Notebooks can then be viewed using :
-```
+
 jupyter notebook
 ```
 
-**However, to avoid having to install this, I've downloaded the notebooks as pdf files, which can be viewed without an environment.**
+> Notebooks are also available as PDFs — no installation needed.  
+> Datasets are in `.zip` folders and need to be extracted before running notebooks.
 
-In addition, for each project, datasets are stored in zip folders. These need to be unzipped if you wish to run the notebooks.
+---
 
 ## 💡 Closing remarks
 
-So far, these are the first projects I've completed. I intend to add new ones soon, especially in NLP, a field I'm currently training in.
-
-Have a nice day!
+Feel free to reach out if you'd like to discuss my more recent work or explore an opportunity together.
